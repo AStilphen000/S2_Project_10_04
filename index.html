@@ -8,8 +8,8 @@
       Case Problem 4
 
       Roads not Taken 
-      Author: 
-      Date:   
+      Author: Angelina Stilphen
+      Date:   2.1.19
 
       Filename: rnt_poetry.html
 
@@ -20,8 +20,8 @@
 
       <link href="rnt_base.css" rel="stylesheet" />
       <link href="rnt_styles.css" rel="stylesheet" />
-            
-   </head>
+      <link rel="stylesheet" href="rnt_audio.css" />            
+   </head> 
 
    <body>
       <header>
@@ -36,6 +36,7 @@
          </nav>
       </header>
 
+      <iframe src="http://www.youtube.com/embed/ie2Mspukx14" frameborder="0"></iframe>
       <figure>
          <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
       </figure>
@@ -70,7 +71,12 @@
 
          <section class="poem">
             <h2>Fire and Ice</h2>
-
+            <audio controls >
+                <source src="rnt_fireice.mp3" type="audio/mp3" />
+                <source src="rnt_fireice.ogg" type="audio/ogg" />
+                <embed src="rnt_fireice.mp3" width="250" height="50" controller="yes" autoplay="yes" showcontrols="yes" autostart="yes" />
+                <p><em>To Play this video clip, your browser needs to support HTML5</em></p>
+            </audio>
             <p>
                Some say the world will end in fire,<br />
                Some say in ice.<br />
