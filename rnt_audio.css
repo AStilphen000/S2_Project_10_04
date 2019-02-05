@@ -6,12 +6,22 @@
    Case Problem 4
 
    Roads Not Taken Audio Styles
-   Author: 
-   Date:   
+   Author: Angelina Stilphen
+   Date:   2.1.19
 
    Filename: rnt_audio.css
 
 */
 
 /* Audio Styles */
+/* This just effects the audio elements and the style rules inside the element displays the audio clip as a block and centering the audio player with the margins applied as well as the width. */
+audio { 
+    display: block;
+    box-shadow: darkgray 8px 8px 15px;
+    margin: 20px auto 20px auto; 
+    width: 80%; 
+}
 
+audio::-webkit-media-controls-panel {
+    background: rgb(128, 128, 255);
+}

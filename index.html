@@ -36,9 +36,10 @@
          </nav>
       </header>
 
-      <iframe src="http://www.youtube.com/embed/ie2Mspukx14" frameborder="0"></iframe>
+      <!-- In this figure element I added a iframe element which used to mark inline frames, inline frames are windows embedded within a web page that display the content f another page or interenet resource. The figcaption below the iframe element it just a breif description of what the video will be about and who. -->
       <figure>
-         <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption>
+         <iframe src="http://www.youtube.com/embed/ie2Mspukx14" frameborder="0"></iframe>
+         <figcaption>Robert Frost reads <cite>The Road Not Taken</cite></figcaption> 
       </figure>
 
       <section id="main">
@@ -69,7 +70,8 @@
 
       <section id="secondary">
 
-         <section class="poem">
+         <section class="poem"> 
+             <!-- For the user to be able to hear the video that is being played you need to add that in, I gave it a title and then I added an audio element under the h2 element.Inside the audio element I added two sources which were the audio for the video. The embed element I added is for embedding the elements that provide an integration point for an external application or interactive content. This is the same for the second audio source for "Devotion". -->
             <h2>Fire and Ice</h2>
             <audio controls >
                 <source src="rnt_fireice.mp3" type="audio/mp3" />
@@ -92,6 +94,12 @@
 
          <section class="poem">
             <h2>Devotion</h2>
+            <audio controls>
+                <source src="rnt_devotion.mp3" type="audio/mp3" />
+                <source src="rnt_devotion.ogg" type="audio/ogg" />
+                <embed src="rnt_devotion.mp3" width="250" height="50" controller="yes" autoplay="yes" showcontrols="yes" autostart="yes" />
+                <p><em>To Play this video clip, your browser needs to support HTML5</em></p>
+            </audio> 
 
             <p>
                The heart can think of no devotion<br />
